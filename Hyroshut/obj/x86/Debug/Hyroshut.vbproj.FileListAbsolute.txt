@@ -1,0 +1,12 @@
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\bin\Debug\Hyroshut.exe
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\bin\Debug\Hyroshut.pdb
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\bin\Debug\Hyroshut.xml
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.Form1.resources
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.Resources.resources
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.Settings.resources
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.SplashScreen1.resources
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.vbproj.GenerateResource.Cache
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.exe
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.xml
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.pdb
+C:\Users\nicol\Documents\Visual Studio 2010\Projects\Hyroshut\Hyroshut\obj\x86\Debug\Hyroshut.vbprojResolveAssemblyReference.cache
