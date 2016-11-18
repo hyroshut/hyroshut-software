@@ -11,7 +11,7 @@
                 If Not created Then
                     Dim msg = "Le fichier """ + filename + """ est manquant ! Voulez vous obtenir de l'aide sur se problème via internet ?"
                     If MessageBox.Show(msg, "Erreur (Code 22) !", MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1) = DialogResult.OK Then
-                        Process.Start("http://hyroshut.ml/help/code-22?file=" + filename.Replace(".", "%2E"))
+                        Process.Start(My.Info.Site & "/help/code-22?file=" + filename.Replace(".", "%2E"))
                         End
                     Else
                         End

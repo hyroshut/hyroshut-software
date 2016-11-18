@@ -6,33 +6,39 @@ Hyroshut
 </name>
 </assembly>
 <members>
+<member name="T:Hyroshut.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
 <member name="P:Hyroshut.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
 </summary>
-</member><member name="P:Hyroshut.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:Hyroshut.My.Resources.Resources.Culture">
+<summary>
   Remplace la propriété CurrentUICulture du thread actuel pour toutes
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
-</member><member name="P:Hyroshut.My.Resources.Resources.hyroshut">
-	<summary>
+</member>
+<member name="P:Hyroshut.My.Resources.Resources.hyroshut">
+<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Hyroshut.My.Resources.Resources.hyroshut_coplete_banner">
-	<summary>
+</member>
+<member name="P:Hyroshut.My.Resources.Resources.hyroshut_coplete_banner">
+<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Hyroshut.My.Resources.Resources.hyroshut_white">
-	<summary>
+</member>
+<member name="P:Hyroshut.My.Resources.Resources.hyroshut_white">
+<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
-</member><member name="T:Hyroshut.My.Resources.Resources">
-	<summary>
-  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
-</summary>
-</member><member name="T:Hyroshut.DrawHelpers">
-	<summary>
+</member>
+<member name="T:Hyroshut.DrawHelpers">
+ <summary>
  LogIn GDI+ Theme
  Creator: Xertz (HF)
  Version: 1.4
@@ -42,7 +48,7 @@ Hyroshut
  UID: 1602992
  For any bugs / errors, PM me.
  </summary>
-	<remarks></remarks>
+ <remarks></remarks>
 </member>
 </members>
 </doc>

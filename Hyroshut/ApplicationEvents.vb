@@ -1,9 +1,5 @@
 ﻿Namespace My
 
-    Public Class Info
-        Shared Property ProgramData = My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData
-    End Class
-
     ' Les événements suivants sont disponibles pour MyApplication :
     ' 
     ' Startup : déclenché au démarrage de l'application avant la création du formulaire de démarrage.
@@ -17,21 +13,26 @@
             If Not IO.Directory.Exists(My.Info.ProgramData) Then
                 IO.Directory.CreateDirectory(My.Info.ProgramData)
             End If
-            If Not IO.File.Exists("Hyroshut.pdb") Then
-                MessageBox.Show("Le fichier Hyroshut.pdb est manquant ! Reinstaller le logiciel pour le récupérer !", "Erreur (code 22)", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End
-
-            End If
             If Not IO.File.Exists(My.Info.ProgramData + "\config.ini") Then
                 Dim file = IO.File.CreateText(My.Info.ProgramData + "\config.ini")
-                file.WriteLine("[general]" & vbCrLf & "topmost=False" & vbCrLf & "savetime=True" & vbCrLf & "devmode=False")
                 file.Close()
+                Dim mc = New Hyro.MyConfig
+                With mc.updateConfig()
+                    .setKey("topmost", False)
+                    .setKey("savetime", True)
+                    .setKey("devmode", False)
+                    .setKey("checkupdate", True)
+                    .save()
+                End With
             End If
             If Not IO.File.Exists(My.Info.ProgramData + "saved_time.ini") Then
                 Dim file = IO.File.CreateText(My.Info.ProgramData + "saved_time.ini")
                 file.WriteLine("[time]" & vbCrLf & "days=0" & vbCrLf & "hours=0" & vbCrLf & "minutes=0" & vbCrLf & "[others]" & vbCrLf & "seconds=0" & vbCrLf & "type=stop")
                 file.Close()
             End If
+            Dim myconfig = New Hyro.MyConfig
+            Dim savetime = New Hyro.SaveTime
+            My.Config.setConfigs(myconfig, savetime)
         End Sub
 
 

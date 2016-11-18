@@ -17,10 +17,5 @@
 
             Return result
         End Function
-
-        Shared Function getPercents(ByVal number)
-
-            Return 0
-        End Function
     End Class
 End Namespace

@@ -14,8 +14,8 @@ AppPublisherURL=http://www.hyroshut.ml/
 AppSupportURL=http://www.hyroshut.ml/
 AppUpdatesURL=http://www.hyroshut.ml/
 DefaultDirName={pf}\Hyroshut
-LicenseFile=..\Hyroshut\bin\Release\license.txt
 OutputDir=..\output
+LicenseFile=..\Hyroshut\bin\Release\license.txt
 OutputBaseFilename=hyroshut-setup
 SolidCompression=false
 

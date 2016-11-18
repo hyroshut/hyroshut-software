@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,12 @@ Partial Class Settings
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LogInButton2 = New Hyroshut.LogInButton()
         Me.LogInButton1 = New Hyroshut.LogInButton()
         Me.LogInGroupBox1 = New Hyroshut.LogInGroupBox()
+        Me.LogInCheckBox4 = New Hyroshut.LogInCheckBox()
         Me.LogInCheckBox3 = New Hyroshut.LogInCheckBox()
         Me.LogInCheckBox2 = New Hyroshut.LogInCheckBox()
         Me.LogInCheckBox1 = New Hyroshut.LogInCheckBox()
@@ -65,6 +66,7 @@ Partial Class Settings
         'LogInGroupBox1
         '
         Me.LogInGroupBox1.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LogInGroupBox1.Controls.Add(Me.LogInCheckBox4)
         Me.LogInGroupBox1.Controls.Add(Me.LogInCheckBox3)
         Me.LogInGroupBox1.Controls.Add(Me.LogInCheckBox2)
         Me.LogInGroupBox1.Controls.Add(Me.LogInCheckBox1)
@@ -73,10 +75,25 @@ Partial Class Settings
         Me.LogInGroupBox1.Location = New System.Drawing.Point(12, 53)
         Me.LogInGroupBox1.MainColour = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.LogInGroupBox1.Name = "LogInGroupBox1"
-        Me.LogInGroupBox1.Size = New System.Drawing.Size(746, 125)
+        Me.LogInGroupBox1.Size = New System.Drawing.Size(746, 146)
         Me.LogInGroupBox1.TabIndex = 1
         Me.LogInGroupBox1.Text = "Paramètres généraux"
         Me.LogInGroupBox1.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        '
+        'LogInCheckBox4
+        '
+        Me.LogInCheckBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.LogInCheckBox4.BaseColour = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.LogInCheckBox4.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LogInCheckBox4.Checked = True
+        Me.LogInCheckBox4.CheckedColour = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(174, Byte), Integer))
+        Me.LogInCheckBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LogInCheckBox4.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LogInCheckBox4.Location = New System.Drawing.Point(12, 62)
+        Me.LogInCheckBox4.Name = "LogInCheckBox4"
+        Me.LogInCheckBox4.Size = New System.Drawing.Size(315, 22)
+        Me.LogInCheckBox4.TabIndex = 0
+        Me.LogInCheckBox4.Text = "Rechercher les mises a jour au démarrage"
         '
         'LogInCheckBox3
         '
@@ -87,7 +104,7 @@ Partial Class Settings
         Me.LogInCheckBox3.CheckedColour = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(174, Byte), Integer))
         Me.LogInCheckBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LogInCheckBox3.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LogInCheckBox3.Location = New System.Drawing.Point(12, 90)
+        Me.LogInCheckBox3.Location = New System.Drawing.Point(12, 118)
         Me.LogInCheckBox3.Name = "LogInCheckBox3"
         Me.LogInCheckBox3.Size = New System.Drawing.Size(315, 22)
         Me.LogInCheckBox3.TabIndex = 0
@@ -102,7 +119,7 @@ Partial Class Settings
         Me.LogInCheckBox2.CheckedColour = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(174, Byte), Integer))
         Me.LogInCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LogInCheckBox2.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LogInCheckBox2.Location = New System.Drawing.Point(12, 62)
+        Me.LogInCheckBox2.Location = New System.Drawing.Point(12, 34)
         Me.LogInCheckBox2.Name = "LogInCheckBox2"
         Me.LogInCheckBox2.Size = New System.Drawing.Size(315, 22)
         Me.LogInCheckBox2.TabIndex = 0
@@ -117,7 +134,7 @@ Partial Class Settings
         Me.LogInCheckBox1.CheckedColour = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(174, Byte), Integer))
         Me.LogInCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LogInCheckBox1.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.LogInCheckBox1.Location = New System.Drawing.Point(12, 34)
+        Me.LogInCheckBox1.Location = New System.Drawing.Point(12, 90)
         Me.LogInCheckBox1.Name = "LogInCheckBox1"
         Me.LogInCheckBox1.Size = New System.Drawing.Size(315, 22)
         Me.LogInCheckBox1.TabIndex = 0
@@ -164,4 +181,5 @@ Partial Class Settings
     Friend WithEvents LogInButton1 As Hyroshut.LogInButton
     Friend WithEvents LogInButton2 As Hyroshut.LogInButton
     Friend WithEvents LogInCheckBox3 As Hyroshut.LogInCheckBox
+    Friend WithEvents LogInCheckBox4 As LogInCheckBox
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -28,6 +28,8 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LogInButton1 = New Hyroshut.LogInButton()
         Me.LogInGroupBox1 = New Hyroshut.LogInGroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LogInRadioButton3 = New Hyroshut.LogInRadioButton()
         Me.LogInRadioButton2 = New Hyroshut.LogInRadioButton()
         Me.LogInRadioButton1 = New Hyroshut.LogInRadioButton()
         Me.LogInButtonWithProgress1 = New Hyroshut.LogInButtonWithProgress()
@@ -80,6 +82,7 @@ Partial Class Form1
         'LogInGroupBox1
         '
         Me.LogInGroupBox1.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LogInGroupBox1.Controls.Add(Me.LogInRadioButton3)
         Me.LogInGroupBox1.Controls.Add(Me.LogInRadioButton2)
         Me.LogInGroupBox1.Controls.Add(Me.LogInRadioButton1)
         Me.LogInGroupBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
@@ -92,6 +95,33 @@ Partial Class Form1
         Me.LogInGroupBox1.Text = "Que faire ?"
         Me.LogInGroupBox1.TextColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(379, 74)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(189, 30)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "NON MIS A JOUR"
+        Me.Label1.Visible = False
+        '
+        'LogInRadioButton3
+        '
+        Me.LogInRadioButton3.BaseColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.LogInRadioButton3.BorderColour = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LogInRadioButton3.Checked = False
+        Me.LogInRadioButton3.CheckedColour = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.LogInRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LogInRadioButton3.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LogInRadioButton3.HighlightColour = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.LogInRadioButton3.Location = New System.Drawing.Point(307, 60)
+        Me.LogInRadioButton3.Name = "LogInRadioButton3"
+        Me.LogInRadioButton3.Size = New System.Drawing.Size(124, 22)
+        Me.LogInRadioButton3.TabIndex = 0
+        Me.LogInRadioButton3.Text = "Veille prolongé"
+        '
         'LogInRadioButton2
         '
         Me.LogInRadioButton2.BaseColour = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
@@ -101,9 +131,9 @@ Partial Class Form1
         Me.LogInRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LogInRadioButton2.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.LogInRadioButton2.HighlightColour = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.LogInRadioButton2.Location = New System.Drawing.Point(255, 58)
+        Me.LogInRadioButton2.Location = New System.Drawing.Point(166, 60)
         Me.LogInRadioButton2.Name = "LogInRadioButton2"
-        Me.LogInRadioButton2.Size = New System.Drawing.Size(106, 22)
+        Me.LogInRadioButton2.Size = New System.Drawing.Size(101, 22)
         Me.LogInRadioButton2.TabIndex = 0
         Me.LogInRadioButton2.Text = "Redémarrer"
         '
@@ -116,9 +146,9 @@ Partial Class Form1
         Me.LogInRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LogInRadioButton1.FontColour = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.LogInRadioButton1.HighlightColour = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.LogInRadioButton1.Location = New System.Drawing.Point(115, 58)
+        Me.LogInRadioButton1.Location = New System.Drawing.Point(45, 60)
         Me.LogInRadioButton1.Name = "LogInRadioButton1"
-        Me.LogInRadioButton1.Size = New System.Drawing.Size(84, 22)
+        Me.LogInRadioButton1.Size = New System.Drawing.Size(81, 22)
         Me.LogInRadioButton1.TabIndex = 0
         Me.LogInRadioButton1.Text = "Eteindre"
         '
@@ -136,7 +166,7 @@ Partial Class Form1
         Me.LogInButtonWithProgress1.ProgressColour = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(151, Byte), Integer))
         Me.LogInButtonWithProgress1.Size = New System.Drawing.Size(477, 68)
         Me.LogInButtonWithProgress1.TabIndex = 2
-        Me.LogInButtonWithProgress1.Text = "Demarrer"
+        Me.LogInButtonWithProgress1.Text = "Programmer"
         Me.LogInButtonWithProgress1.Value = 0
         '
         'LogInGroupBox2
@@ -262,16 +292,17 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(664, 464)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LogInButton1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LogInGroupBox1)
         Me.Controls.Add(Me.LogInButtonWithProgress1)
         Me.Controls.Add(Me.LogInGroupBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(126, 39)
+        Me.MinimumSize = New System.Drawing.Size(126, 43)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "HyroShut"
@@ -284,8 +315,10 @@ Partial Class Form1
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents LogInLabel1 As Hyroshut.LogInLabel
     Friend WithEvents LogInLabel2 As Hyroshut.LogInLabel
     Friend WithEvents LogInLabel3 As Hyroshut.LogInLabel
@@ -302,5 +335,6 @@ Partial Class Form1
     Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown3 As System.Windows.Forms.NumericUpDown
-
+    Friend WithEvents LogInRadioButton3 As LogInRadioButton
+    Friend WithEvents Label1 As Label
 End Class

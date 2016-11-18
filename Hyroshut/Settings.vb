@@ -1,20 +1,12 @@
 ﻿Imports Hyroshut.Hyro
 Public Class Settings
 
-    Dim myConfig As MyConfig
-
-    Sub New()
-        ' Cet appel est requis par le concepteur.
-        InitializeComponent()
-        ' Ajoutez une initialisation quelconque après l'appel InitializeComponent().
-        Me.myConfig = New MyConfig
-    End Sub
-
     Private Sub LogInButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogInButton1.Click
-        With myConfig.updateConfig()
+        With My.Config.updateConfig()
             .setKey("topmost", LogInCheckBox1.Checked)
             .setKey("savetime", LogInCheckBox2.Checked)
             .setKey("devmode", LogInCheckBox3.Checked)
+            .setKey("checkupdate", LogInCheckBox4.Checked)
             .save()
         End With
         Dim msg = "Les modifications vont être pris en compte après le redémarrage du logiciel, voulez vous le redémarrer maintenant ?"
@@ -26,13 +18,14 @@ Public Class Settings
     End Sub
 
     Public Function read(ByVal key)
-        Return myConfig.getKey(key)
+        Return My.Config.getKey(key)
     End Function
 
     Private Sub Settings_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         LogInCheckBox1.Checked = read("topmost")
         LogInCheckBox2.Checked = read("savetime")
         LogInCheckBox3.Checked = read("devmode")
+        LogInCheckBox4.Checked = read("checkupdate")
     End Sub
 
     Private Sub LogInCheckBox3_CheckedChanged(ByVal sender As System.Object) Handles LogInCheckBox3.CheckedChanged
