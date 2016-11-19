@@ -2,7 +2,7 @@
     Public Class Info
         Shared Property ProgramData = My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData
         Public Shared Property Site = "https://www.hyroshut.ml"
-        Public Shared Property Version = "v" & Application.Info.Version.Major & "." & Application.Info.Version.Minor & "." & Application.Info.Version.MajorRevision
+        Public Shared Property Version = "v1.1.1"
     End Class
 
     Public Class Config
